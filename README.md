@@ -397,17 +397,6 @@ with country code,Password (standard regex validation to be added)
     }
 }`
 
-## Output
-
-`pagination": {
-        "totalRows": 20,
-        "rowSize": 8,
-        "currentPage": 1,
-        "currentPageFirstSlNo": 1,
-        "currentPageLastSlNo": 8
-    }`
-
-
 ## Update Profile Builder
 
 *** Write CRUD APIs for building User Profile Builder ***
