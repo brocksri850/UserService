@@ -223,8 +223,9 @@ with country code,Password (standard regex validation to be added)
 
 ## Get all user
 
-*** Profile Listing with pagination required, search (based on basic info), totalCount,
-filteredCount ***
+*** Profile Listing with pagination required, search (based on basic info), totalCount, filteredCount ***
+
+`Method: GET Url: http://localhost:7000/user/getallusers?pageNumber=3&search=brock`
 
 ## Input: 
 
@@ -395,6 +396,16 @@ filteredCount ***
         "currentPageLastSlNo": 8
     }
 }`
+
+## Output
+
+`pagination": {
+        "totalRows": 20,
+        "rowSize": 8,
+        "currentPage": 1,
+        "currentPageFirstSlNo": 1,
+        "currentPageLastSlNo": 8
+    }`
 
 
 ## Update Profile Builder
