@@ -37,12 +37,6 @@ export class AuthServer {
             }
             var payload: any = {};
 
-            // if (_.isError(err)) {
-            //     jwtUtils.jwtSignSetWithExpireTime({ redisId: decode.redisId }, function (err: any, token: any) {
-
-            //     })
-            // }
-
             commonService.findOne({ where: { key: decode.redisId } }, models.User, function (err, response) {
                 if (err) return res.status(400).send(errResponse);
                 if (!response) return res.status(400).send(errResponse);
