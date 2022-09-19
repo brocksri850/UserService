@@ -13,7 +13,7 @@ export class JWTServer {
 
     public jwtSignSetWithExpireTime(data: any, callback: Function) {
 
-        jwt.sign(data, constant.SecretKey, { algorithm: 'HS512', expiresIn: '24hrs' }, function (err, token) {
+        jwt.sign(data, constant.SecretKey, { algorithm: 'HS512', expiresIn: '10d' }, function (err, token) {
             callback(err, token)
         });
     }
